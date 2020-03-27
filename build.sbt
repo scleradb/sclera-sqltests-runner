@@ -24,7 +24,7 @@ resolvers += "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repos
 libraryDependencies ++= Seq(
     "com.scleradb" %% "sclera-core" % "4.0-SNAPSHOT" % "provided",
     "com.scleradb" %% "sclera-sqltests-parser" % "4.0-SNAPSHOT",
-    "org.scalatest" %% "scalatest" % "3.1.0" % "provided"
+    "org.scalatest" %% "scalatest" % "3.1.1" % "provided"
 )
 
 scalacOptions ++= Seq(
