@@ -31,6 +31,11 @@ import com.scleradb.sqltests.parser._
 trait SqlTestRunner extends AnyFunSpec with CancelAfterFailure {
     val isPrintEnabled: Boolean = true
 
+    val isTravis: Boolean = Option(System.getenv("TRAVIS")) match {
+        case Some(s) => s.toBoolean
+        case None => false
+    }
+
     def runScript(stmt: Statement, scriptFile: String): Unit = {
         val scriptStreamOpt: Option[InputStream] =
             Option(getClass().getResourceAsStream(scriptFile))
