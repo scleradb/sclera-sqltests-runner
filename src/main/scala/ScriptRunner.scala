@@ -98,7 +98,6 @@ trait SqlTestRunner extends AnyFunSpec with CancelAfterFailure {
                                 "\" not in expected columns: (" +
                                 cols.mkString(", ") + ")"
                             )
-
                         )
                     }
 
