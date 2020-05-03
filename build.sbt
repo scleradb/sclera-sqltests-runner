@@ -11,7 +11,7 @@ scmInfo := Some(
     )
 )
 
-version := "4.0-SNAPSHOT"
+version := "4.0"
 
 startYear := Some(2012)
 
@@ -22,8 +22,8 @@ licenses := Seq("Apache License version 2.0" -> url("https://www.apache.org/lice
 resolvers += "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots"
 
 libraryDependencies ++= Seq(
-    "com.scleradb" %% "sclera-core" % "4.0-SNAPSHOT" % "provided",
-    "com.scleradb" %% "sclera-sqltests-parser" % "4.0-SNAPSHOT",
+    "com.scleradb" %% "sclera-core" % "4.0" % "provided",
+    "com.scleradb" %% "sclera-sqltests-parser" % "4.0",
     "org.scalatest" %% "scalatest" % "3.1.1" % "provided"
 )
 
